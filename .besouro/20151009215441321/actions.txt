@@ -4,3 +4,9 @@ RefactoringAction 1444399279434 SudokuVerifier.java ADD String sub FIELD
 RefactoringAction 1444399293064 SudokuVerifier.java ADD Object check9() METHOD
 EditAction 1444399304830 SudokuVerifier.java 308 2 2 0
 EditAction 1444399308898 TestSudokuVerifier.java 312 1 4 1
+UnitTestCaseAction 1444399339993 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444399339999 TestSudokuVerifier FAIL
+RefactoringAction 1444399419234 SudokuVerifier.java ADD int FIELD
+UnitTestCaseAction 1444399478079 TestSudokuVerifier.java OK
+UnitTestSessionAction 1444399478080 TestSudokuVerifier OK
+EditAction 1444399488629 TestSudokuVerifier.java 312 1 4 1

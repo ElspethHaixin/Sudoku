@@ -9,7 +9,7 @@ public class TestSudokuVerifier {
 	@Test
 	public void test() {
 		SudokuVerifier sv = new SudokuVerifier();
-		sv.sub = "123456789";
+		sv.sub = "123456780";
 		boolean exp = true;
 		assertEquals(exp, sv.check9());
 	}
