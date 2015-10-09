@@ -14,4 +14,13 @@ public class TestSudokuVerifier {
 		assertEquals(exp, sv.check9());
 	}
 
+	@Test
+	public void testVerify() {
+		SudokuVerifier sv = new SudokuVerifier();
+		boolean exp1 = true;
+		boolean exp2 = false;
+		assertEquals(exp1, sv.verify("417369825632158947958724316825437169791586432346912758289643571573291684164875293"));
+		assertEquals(exp2, sv.verify("417369825632158947958724316825437169791586432346912758289643571573291684164875293"));
+	}
+	
 }
