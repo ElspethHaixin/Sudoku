@@ -10,3 +10,12 @@ RefactoringAction 1444399419234 SudokuVerifier.java ADD int FIELD
 UnitTestCaseAction 1444399478079 TestSudokuVerifier.java OK
 UnitTestSessionAction 1444399478080 TestSudokuVerifier OK
 EditAction 1444399488629 TestSudokuVerifier.java 312 1 4 1
+UnitTestCaseAction 1444399490635 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444399490636 TestSudokuVerifier FAIL
+RefactoringAction 1444399521725 TestSudokuVerifier.java RENAME test()=>void testCheck() METHOD
+RefactoringAction 1444399522751 TestSudokuVerifier.java RENAME testCheck()=>void testCheck9() METHOD
+RefactoringAction 1444399552816 TestSudokuVerifier.java ADD void testCheck9()/2 METHOD
+RefactoringAction 1444399649097 TestSudokuVerifier.java REMOVE testCheck9()/2 METHOD
+RefactoringAction 1444399749609 SudokuVerifier.java RENAME sub=>p String FIELD
+RefactoringAction 1444399751641 SudokuVerifier.java RENAME String=>String sub FIELD
+EditAction 1444399760838 TestSudokuVerifier.java 318 1 4 1

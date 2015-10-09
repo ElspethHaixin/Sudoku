@@ -7,9 +7,9 @@ import org.junit.Test;
 public class TestSudokuVerifier {
 
 	@Test
-	public void test() {
+	public void testCheck9() {
 		SudokuVerifier sv = new SudokuVerifier();
-		sv.sub = "123456780";
+		sv.sub = "123456789";
 		boolean exp = true;
 		assertEquals(exp, sv.check9());
 	}
