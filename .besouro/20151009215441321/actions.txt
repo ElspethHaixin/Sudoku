@@ -3,3 +3,4 @@ FileOpenedAction 1444398897638 TestSudokuVerifier.java 216 1 1 0
 RefactoringAction 1444399279434 SudokuVerifier.java ADD String sub FIELD
 RefactoringAction 1444399293064 SudokuVerifier.java ADD Object check9() METHOD
 EditAction 1444399304830 SudokuVerifier.java 308 2 2 0
+EditAction 1444399308898 TestSudokuVerifier.java 312 1 4 1
