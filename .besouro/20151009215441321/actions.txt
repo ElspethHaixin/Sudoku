@@ -29,3 +29,8 @@ UnitTestSessionAction 1444399876833 TestSudokuVerifier OK
 RefactoringAction 1444399885202 TestSudokuVerifier.java ADD void testCheck9()/2 METHOD
 RefactoringAction 1444399893230 TestSudokuVerifier.java RENAME testCheck9()/2=>void testVerify() METHOD
 EditAction 1444399993028 TestSudokuVerifier.java 696 2 9 3
+UnitTestCaseAction 1444399994816 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444399994816 TestSudokuVerifier FAIL
+UnitTestCaseAction 1444400278998 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444400278998 TestSudokuVerifier FAIL
+EditAction 1444400287595 TestSudokuVerifier.java 696 2 9 3
