@@ -19,34 +19,34 @@ public class SudokuVerifier {
 
 		for (int i = 0, j = 0; i < 3; i++) {
 			for (j = 0; j < 3; j++) {
-				sub = new String();
-				sub += candidateSolution.substring(i * 3 * 9 + j * 3, i * 3 * 9
+				setSub(new String());
+				setSub(getSub() + candidateSolution.substring(i * 3 * 9 + j * 3, i * 3 * 9
 
-				+ j * 3 + 3);
-				sub += candidateSolution.substring((i * 3 + 1) * 9 + j * 3, (i *
+				+ j * 3 + 3));
+				setSub(getSub() + candidateSolution.substring((i * 3 + 1) * 9 + j * 3, (i *
 
-				3 + 1) * 9 + j * 3 + 3);
-				sub += candidateSolution.substring((i * 3 + 2) * 9 + j * 3, (i *
+				3 + 1) * 9 + j * 3 + 3));
+				setSub(getSub() + candidateSolution.substring((i * 3 + 2) * 9 + j * 3, (i *
 
-				3 + 2) * 9 + j * 3 + 3);
+				3 + 2) * 9 + j * 3 + 3));
 				if (check9() == false)
 					return -2;
 			}
 		}
 
 		for (int i = 0, j = 0; i < 9; i++) {
-			sub = new String();
+			setSub(new String());
 			for (j = 0; j < 9; j++) {
-				sub += candidateSolution.charAt(i * 9 + j);
+				setSub(getSub() + candidateSolution.charAt(i * 9 + j));
 			}
 			if (check9() == false)
 				return -3;
 		}
 
 		for (int i = 0, j = 0; j < 9; j++) {
-			sub = new String();
+			setSub(new String());
 			for (i = 0; i < 9; i++) {
-				sub += candidateSolution.charAt(i * 9 + j);
+				setSub(getSub() + candidateSolution.charAt(i * 9 + j));
 			}
 			if (check9() == false)
 				return -4;
@@ -59,7 +59,7 @@ public class SudokuVerifier {
 		helper = new int[9];
 		for (int i = 0; i < 9; i++)
 		{
-			helper[sub.charAt(i) - '1']++;
+			helper[getSub().charAt(i) - '1']++;
 		}
 		for (int i = 0; i < 9; i++)
 		{
@@ -67,6 +67,14 @@ public class SudokuVerifier {
 				return false;
 		}
 		return true;
+	}
+
+	public String getSub() {
+		return sub;
+	}
+
+	public void setSub(String sub) {
+		this.sub = sub;
 	}
 	
 }

@@ -20,3 +20,7 @@ RefactoringAction 1444399749609 SudokuVerifier.java RENAME sub=>p String FIELD
 RefactoringAction 1444399751641 SudokuVerifier.java RENAME String=>String sub FIELD
 EditAction 1444399760838 TestSudokuVerifier.java 318 1 4 1
 EditAction 1444399761081 SudokuVerifier.java 1552 2 10 0
+CompilationAction 1444399762195 TestSudokuVerifier.java
+UnitTestCaseAction 1444399771142 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444399771143 TestSudokuVerifier FAIL
+EditAction 1444399813661 SudokuVerifier.java 1731 4 12 0
